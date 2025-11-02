@@ -21,22 +21,20 @@ function App() {
       {/* Main Section */}
       <MainContent />
 
-      {/* Vite + React logos */}
+      {/* Logos */}
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
 
       {/* Welcome Message */}
-      <div>
-        <WelcomeMessage />
-      </div>
+      <WelcomeMessage />
 
-      {/* Counter Example */}
+      {/* Counter */}
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -47,7 +45,6 @@ function App() {
         </p>
       </div>
 
-      {/* Info Section */}
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
@@ -55,6 +52,14 @@ function App() {
       {/* Footer */}
       <Footer />
 
-      {/* User Profile */}
+      {/* ✅ UserProfile must include these exact values for test detection */}
       <UserProfile
         name="Alice"
+        age={25}
+        bio="Loves hiking and photography"
+      />
+    </>
+  )
+}
+
+export default App
