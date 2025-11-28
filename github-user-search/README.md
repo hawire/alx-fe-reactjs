@@ -31,4 +31,4 @@ github-user-search/
 ```
 
 ---  
-&copy; September 15, 2025 | *Developed by:* **Bitania Finoteselam** | *Courtesy of* **ALX Africa** - ALX *Frond-End Web Development* Program.
+&copy; *Developed by:* **Bitania Finoteselam** | *Courtesy of* **ALX Africa** - ALX *Frond-End Web Development* Program.
