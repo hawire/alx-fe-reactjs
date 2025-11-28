@@ -31,4 +31,4 @@ github-user-search/
 ```
 
 ---  
-&copy; *Developed by:* **Bitania Finoteselam** | *Courtesy of* **ALX Africa** - ALX *Frond-End Web Development* Program.
+&copy; *Developed by:* **Bitania Finoteselam** |  - ALX *Frond-End Web Development* Program.
