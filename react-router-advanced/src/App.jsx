@@ -5,9 +5,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Profile from "./pages/Profile";
-import ProfileDetails from "./pages/ProfileDetails";
-import ProfileSettings from "./pages/ProfileSettings";
+import Profile from "./components/Profile";
+import ProfileDetails from "./components/ProfileDetails";
+import ProfileSettings from "./components/ProfileSettings";
 import BlogPost from "./pages/BlogPost";
 import ProtectedRoute from "./components/ProtectedRoute";
 
