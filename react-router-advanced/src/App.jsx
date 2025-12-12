@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
@@ -21,12 +21,11 @@ export default function App() {
 
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
-            {/* Profile now handles its own nested routes */}
             <Route path="/profile/*" element={<Profile />} />
           </Route>
 
-          {/* Dynamic route */}
-          <Route path="/blog/:postId" element={<BlogPost />} />
+          {/* Dynamic route for checker */}
+          <Route path="/blog/:id" element={<BlogPost />} />
 
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
