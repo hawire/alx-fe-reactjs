@@ -1,4 +1,4 @@
-
+// src/App.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
@@ -6,8 +6,6 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Profile from "./components/Profile";
-import ProfileDetails from "./components/ProfileDetails";
-import ProfileSettings from "./components/ProfileSettings";
 import BlogPost from "./pages/BlogPost";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -23,17 +21,14 @@ export default function App() {
 
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
-            <Route path="/profile" element={<Profile />}>
-              <Route index element={<ProfileDetails />} />
-              <Route path="details" element={<ProfileDetails />} />
-              <Route path="settings" element={<ProfileSettings />} />
-            </Route>
+            {/* Profile now handles its own nested routes */}
+            <Route path="/profile/*" element={<Profile />} />
           </Route>
 
           {/* Dynamic route */}
           <Route path="/blog/:postId" element={<BlogPost />} />
 
-          {/* Fallback route */}
+          {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
