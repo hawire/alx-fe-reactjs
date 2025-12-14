@@ -9,7 +9,6 @@ describe('TodoList Component', () => {
     expect(screen.getByText('Build Todo App')).toBeInTheDocument();
   });
 
-
   test('adds a new todo', () => {
     render(<TodoList />);
     const input = screen.getByLabelText('todo-input');
@@ -20,7 +19,6 @@ describe('TodoList Component', () => {
 
     expect(screen.getByText('New Todo Item')).toBeInTheDocument();
   });
-
 
   test('toggles todo completion', () => {
     render(<TodoList />);
@@ -33,15 +31,11 @@ describe('TodoList Component', () => {
     expect(todo).toHaveStyle('text-decoration: none');
   });
 
-
   test('deletes a todo', () => {
     render(<TodoList />);
     const deleteButton = screen.getByTestId('delete-2'); // 'Write Tests'
     fireEvent.click(deleteButton);
 
     expect(screen.queryByText('Write Tests')).not.toBeInTheDocument();
-  });
-  describe('TodoList Component', () => {
-
   });
 });
